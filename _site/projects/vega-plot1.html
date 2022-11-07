@@ -75,22 +75,46 @@
     <div class="col-lg-10 mx-auto mt-5 markdown-body">
   <h1 id="vega-chart-1">Vega chart #1:</h1>
 
+<p>For the two plots, we use <a href="https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2022/main/data/building_inventory.csv">the dataset here.</a></p>
+
+<p>Using HTML tags like below:</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;vegachart schema-url="/assets/json/cars.json" style="width: 100%"&gt;&lt;/vegachart&gt;
 </code></pre></div></div>
 
 <vegachart schema-url="/assets/json/assignment10-hx.json" style="width: 60%"></vegachart>
 
-<h2 id="search-the-data--methods">Search The Data &amp; Methods</h2>
-<!-- these are written in a combo of html and liquid -->
+<h1 id="write-up">Write up</h1>
+
+<h4 id="a-description-of-what-you-are-visualizing">A description of what you are visualizing</h4>
+
+<p>The left one is to explore the relationship between congress district and county in Illinois. We can know how many congress dictrict areas are located in each county and for each section we could know the number of buildings. And the right one is to show the number of building in each county.</p>
+
+<h4 id="what-design-choices-you-made">What design choices you made?</h4>
+
+<p>I used those encoding types quantitative-Q(a continuous real-valued quantity), ordinal-O(a discrete ordered quantity), nominal-N(a discrete unordered category). And I didn’t use a color scheme in this plot.</p>
+
+<h4 id="discussion-of-data-transformations">Discussion of data transformations</h4>
+
+<p>I found there are duplicate rows in this csv file so I used pandas to remove those duplicates. Then I found the remaining has more than 5000 rows, therefore I disabled MaxRowsError for altair.</p>
+
+<h4 id="quotations-around-any-parts-of-homework-9">Quotations around any parts of Homework #9</h4>
+
+<p><a href="https://starboard.gg/hexiang/he-xiang-assignment9-nm5I9G2">hw 9 Source</a></p>
+
+<p>The histogram is exactly the same plot with previous assignment but all in altair style. I just basiclly convert the javascipt liked code into altair(you can clearly compare the original js code with altair code).</p>
+
+<h4 id="interactivity-you-chose-for-this-plot">Interactivity you chose for this plot</h4>
+
+<p>I seperate the number of buildings by its county and congress district in the left plot. By selection certain area, it will interactively show total number of building in each county in the right plot without the consideration of its congress district.</p>
 
 <div class="left">
-<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com//assets/json/assignment10-hx.json">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/CiliaCuiMsim/ciliacuimsim.github.io/blob/master/assets/json/assignment10-hx.json">
   The Data
 </a>
 </div>
 
 <div class="right">
-<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/jnaiman/online_cv_public/blob/main/python_notebooks/hw10_hx.ipynb">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/CiliaCuiMsim/ciliacuimsim.github.io/blob/master/python_notebooks/hw10_hx.ipynb">
   The Analysis
 </a>
 </div>

@@ -74,22 +74,43 @@
 </nav>
     <div class="col-lg-10 mx-auto mt-5 markdown-body">
   <h1 id="vega-chart-2">Vega chart #2:</h1>
-<p>For plot 2 built onto the same dataset, we have the visualization as follow:</p>
+<p>For the two plots, we use <a href="https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2022/main/data/building_inventory.csv">the dataset here.</a></p>
+
+<p>For plot #2 built onto the same dataset, we have the visualization as follow:</p>
 
 <vegachart schema-url="/assets/json/hw10-cc.json" style="width: 100%"></vegachart>
 
-<h2 id="search-the-data--methods">Search The Data &amp; Methods</h2>
+<h1 id="write-up">Write up</h1>
 
-<!-- these are written in a combo of html and liquid -->
+<h4 id="a-description-of-what-you-are-visualizing">A description of what you are visualizing</h4>
+
+<p>This plot is a visualization of the distribution of constructions in different floors built by different agencies. The rectangular plot shows the number of constructions that each agency built in different floor levels. The deeper the color is, the more the number of constructions of this floor level that this agency has built.</p>
+
+<h4 id="what-design-choices-you-made">What design choices you made?</h4>
+
+<p>To build this plot, I utilized the maxbin of 20 as for the x axis, and applied ordinal type onto the y axis to build a clear view on the different agency names. As for the color, I don’t apply a specific color theme onto this plot because there’s not a strong reason to do so based on this relatively small data/type scale.</p>
+
+<h4 id="discussion-of-data-transformations">Discussion of data transformations</h4>
+
+<p>In the notebook, I’ve already check the na values that might affect the visualizaiton effect and found no need to filter the data before applying it to altair. So there’s only value checks without data transformations.</p>
+
+<h4 id="quotations-around-any-parts-of-homework-9">Quotations around any parts of Homework #9</h4>
+
+<p>Acutally this plot is based on my work at <a href="https://starboard.gg/qc23/homework9_qc23-na1PBCyr">homework #9.</a>
+The rec plot is exactly the same plot as the “2 rectangular plot” but in altair style. I just basiclly convert the javascipt liked code into altair(you can clearly compare the original js code with altair code).</p>
+
+<h4 id="interactivity-you-chose-for-this-plot">Interactivity you chose for this plot</h4>
+
+<p>See plot 1. In this plot we don’t apply the interactive part to it.</p>
 
 <div class="left">
-<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/CiliaCuiMsim/ciliacuimsim.github.io/tree/master/assets/json/hw10-cc.json">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/CiliaCuiMsim/ciliacuimsim.github.io/blob/master/assets/json/hw10-cc.json">
   The Data
 </a>
 </div>
 
 <div class="right">
-<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/CiliaCuiMsim/ciliacuimsim.github.io/tree/master/python_notebooks/hw10_cc.ipynb">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/CiliaCuiMsim/ciliacuimsim.github.io/blob/master/python_notebooks/hw10final.ipynb">
   The Analysis
 </a>
 </div>
