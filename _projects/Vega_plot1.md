@@ -55,6 +55,6 @@ I seperate the number of buildings by its county and congress district in the le
 </div>
 
 <div class="right">
-{% include elements/button.html link="https://github.com/CiliaCuiMsim/ciliacuimsim.github.io/blob/master/python_notebooks/hw10_hx.ipynb" text="The Analysis" %}
+{% include elements/button.html link="https://github.com/CiliaCuiMsim/ciliacuimsim.github.io/blob/master/python_notebooks/hw10final.ipynb" text="The Analysis" %}
 </div>
 
