@@ -8,7 +8,7 @@
 title               : Doya Blog
 description         : >-
                       Hope this might work. Proj(homework10-group10) held by Cilia Cui and Xiang He. This pic is my cute evil cat Doya.
-baseurl             : "/online_cv_public"   # Change to empty quotes if you are hosting your site at <your-username>.github.io directly,
+baseurl             : ""   # Change to empty quotes if you are hosting your site at <your-username>.github.io directly,
 #                                             otherwise will be hosted at <your-username>.github.io/{{base_url}}
 repository          : ciliacuimsim.github.io               # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
 open_new_tab        : false                             # Opens external URLs in new tab (works for posts, projects and navbar only)
