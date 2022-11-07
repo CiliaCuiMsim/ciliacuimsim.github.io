@@ -24,10 +24,10 @@ For plot 2 built onto the same dataset, we have the visualization as follow:
 <!-- these are written in a combo of html and liquid --> 
 
 <div class="left">
-{% include elements/button.html link="https://github.com/CiliaCuiMsim/ciliacuimsim.github.io/tree/master/assets/json/hw10-cc.json" text="The Data" %}
+{% include elements/button.html link="https://github.com/CiliaCuiMsim/ciliacuimsim.github.io/blob/master/assets/json/hw10-cc.json" text="The Data" %}
 </div>
 
 <div class="right">
-{% include elements/button.html link="https://github.com/CiliaCuiMsim/ciliacuimsim.github.io/tree/master/python_notebooks/hw10_cc.ipynb" text="The Analysis" %}
+{% include elements/button.html link="https://github.com/CiliaCuiMsim/ciliacuimsim.github.io/blob/master/python_notebooks/hw10_cc.ipynb" text="The Analysis" %}
 </div>
 

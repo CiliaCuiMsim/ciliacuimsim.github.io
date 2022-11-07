@@ -25,10 +25,10 @@ custom_js:
 <!-- these are written in a combo of html and liquid --> 
 
 <div class="left">
-{% include elements/button.html link="https://github.com//assets/json/assignment10-hx.json" text="The Data" %}
+{% include elements/button.html link="https://github.com/CiliaCuiMsim/ciliacuimsim.github.io/blob/master/assets/json/assignment10-hx.json" text="The Data" %}
 </div>
 
 <div class="right">
-{% include elements/button.html link="https://github.com/jnaiman/online_cv_public/blob/main/python_notebooks/hw10_hx.ipynb" text="The Analysis" %}
+{% include elements/button.html link="https://github.com/CiliaCuiMsim/ciliacuimsim.github.io/blob/master/python_notebooks/hw10_hx.ipynb" text="The Analysis" %}
 </div>
 
