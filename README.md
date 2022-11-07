@@ -1,4 +1,4 @@
-# IS445-HW10
+# IS445-HW10-Group10
 *Cilia Cui, Xiang He*
 
 Check https://ciliacuimsim.github.io/projects/ for homework details. The two plots are placed in different projects.
