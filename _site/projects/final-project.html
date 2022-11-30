@@ -21,12 +21,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Vega Lite Example Plot one">
-  <meta property="og:description" content="This is the first plot using vega lite for interactive visualization.">
-  <meta property="og:image" content="assets/pngs/plot1.PNG">
+  <meta property="og:title" content="Final Project - Dog lovers vs Cat lovers">
+  <meta property="og:description" content="Our final project article, including the analysis upon the topic and the related plots.">
+  <meta property="og:image" content="assets/pngs/cover.png">
 
-  <title>Vega Lite Example Plot one</title>
-  <meta name="description" content="This is the first plot using vega lite for interactive visualization.">
+  <title>Final Project - Dog lovers vs Cat lovers</title>
+  <meta name="description" content="Our final project article, including the analysis upon the topic and the related plots.">
 
   <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
 
@@ -73,49 +73,51 @@
 
 </nav>
     <div class="col-lg-10 mx-auto mt-5 markdown-body">
-  <h1 id="vega-chart-1">Vega chart #1:</h1>
+  <h1 id="dog-lovers-vs-cat-lovers">Dog lovers vs Cat lovers</h1>
 
-<p>For the two plots, we use <a href="https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2022/main/data/building_inventory.csv">the dataset here.</a></p>
+<p><em>Cilia Cui, Xiang He</em></p>
 
-<p>Using HTML tags like below:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;vegachart schema-url="/assets/json/cars.json" style="width: 100%"&gt;&lt;/vegachart&gt;
-</code></pre></div></div>
+<p>For the source dataset, we use <a href="https://data.world/datanerd/cat-vs-dog-popularity-in-u-s">the dataset here.</a></p>
 
-<vegachart schema-url="/assets/json/assignment10-hx.json" style="width: 60%"></vegachart>
+<h3 id="1-write-up">1 Write up</h3>
 
-<h1 id="write-up">Write up</h1>
+<p>In this article, we’re going to show you some visualizations about the popularity comparison between the dogs &amp; cats, and the connected descriptions of them. We generate out interactive dashboard using the resource of dataset(see the button at bottom “Source Data”).</p>
 
-<h4 id="a-description-of-what-you-are-visualizing">A description of what you are visualizing</h4>
+<p>To achieve this, we’ve done Exploratory data analysis onto the dataset to check its general information(part 1 in final project),  cleaning and filtering onto the dataset, creating the dashboard based on that(part 2 in final project), and linking this to the Jekyll vega-chart. You could check the output, namely the interactive dashboard in section 2.</p>
 
-<p>The left one is to explore the relationship between congress district and county in Illinois. We can know how many congress dictrict areas are located in each county and for each section we could know the number of buildings. And the right one is to show the number of building in each county.</p>
+<p>Besides, we’ve searched works from other resources which are related to the comparison of popularity between dogs and cats, not only in the U.S of range, but in worldwide range.</p>
 
-<h4 id="what-design-choices-you-made">What design choices you made?</h4>
+<h3 id="2-interactive-visualization">2 Interactive Visualization</h3>
 
-<p>I used those encoding types quantitative-Q(a continuous real-valued quantity), ordinal-O(a discrete ordered quantity), nominal-N(a discrete unordered category). And I didn’t use a color scheme in this plot.</p>
+<p>This dashboard is to explore the relationship, in an interactive way, between the number of dogs in each US state and the number of dogs per household on average. Select the square area on the left with the mouse, and the corresponding histogram can be displayed interactively on the right.</p>
 
-<h4 id="discussion-of-data-transformations">Discussion of data transformations</h4>
+<p>The diagram on the left is the driver diagram. It shows the average number of dogs in households by US state. Among them, the color of each square represents the total number of dogs in the state. The graph on the right is the driven graph, which represents the total number of dogs for each week.</p>
 
-<p>I found there are duplicate rows in this csv file so I used pandas to remove those duplicates. Then I found the remaining has more than 5000 rows, therefore I disabled MaxRowsError for altair.</p>
+<vegachart schema-url="/assets/json/final.json" style="width: 60%"></vegachart>
 
-<h4 id="quotations-around-any-parts-of-homework-9">Quotations around any parts of Homework #9</h4>
+<h3 id="3-contextual-visualization">3 Contextual visualization</h3>
 
-<p><a href="https://starboard.gg/hexiang/he-xiang-assignment9-nm5I9G2">hw 9 Source</a></p>
+<p>For some other related visualization of this popularity topic, firstly we found this mapped picture from <a href="https://www.budgetdirect.com.au/blog/cats-vs-dogs-which-does-the-world-prefer.html">udgetdirect.com</a> (source URL:https://www.budgetdirect.com.au/blog/cats-vs-dogs-which-does-the-world-prefer.html)</p>
 
-<p>The histogram is exactly the same plot with previous assignment but all in altair style. I just basiclly convert the javascipt liked code into altair(you can clearly compare the original js code with altair code).</p>
+<p>We could clearly check onto the plot to figure out the total preference with in a country over the world. For example, the United States residents seem to have more population that love dogs, while Canadians seem to prefer cats more in general.</p>
 
-<h4 id="interactivity-you-chose-for-this-plot">Interactivity you chose for this plot</h4>
+<p><img src="../assets/pngs/final_refer1.PNG" alt="image" /></p>
 
-<p>I seperate the number of buildings by its county and congress district in the left plot. By selection certain area, it will interactively show total number of building in each county in the right plot without the consideration of its congress district.</p>
+<p>Apart from this plot, we also found a mapped picture in the U.S range from <a href="https://time2play.com/blog/cats-states-vs-dog-states/">time2play.com</a> (source URL: https://time2play.com/blog/cats-states-vs-dog-states/)</p>
+
+<p>We could check the preference of states easily via the color! But it lacks some information of the relative amount(like the level of preference in dog or cat represented in depth of color), which i think could be a part that’s able to be improved.</p>
+
+<p><img src="../assets/pngs/final_refer2.PNG" alt="image" /></p>
 
 <div class="left">
-<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/CiliaCuiMsim/ciliacuimsim.github.io/blob/master/assets/json/assignment10-hx.json">
-  The Data
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://data.world/datanerd/cat-vs-dog-popularity-in-u-s">
+  Source Data
 </a>
 </div>
 
 <div class="right">
-<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/CiliaCuiMsim/ciliacuimsim.github.io/blob/master/python_notebooks/hw10final.ipynb">
-  The Analysis
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/CiliaCuiMsim/ciliacuimsim.github.io/blob/master/python_notebooks/finalproj.ipynb">
+  Analysis notebook
 </a>
 </div>
 
