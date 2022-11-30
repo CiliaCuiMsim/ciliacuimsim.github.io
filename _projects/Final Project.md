@@ -28,9 +28,9 @@ Besides, we've searched works from other resources which are related to the comp
 
 ### 2 Interactive Visualization
 
-This dashboard is to explore the relationship, in an interactive way, between the number of dogs in each US state and the number of dogs per household on average. Select the square area on the left with the mouse, and the corresponding histogram can be displayed interactively on the right.  
+This dashboard is to explore the relationship, in an interactive way, between the number of dogs in each US state and the number of dogs per household on average.In the meanwhile, the dashboard also shows the cat population the selected states. Select the square area on the left with the mouse, and the corresponding histogram can be displayed interactively on the right.  
 
-The diagram on the left is the driver diagram. It shows the average number of dogs in households by US state. Among them, the color of each square represents the total number of dogs in the state. The graph on the right is the driven graph, which represents the total number of dogs for each week. 
+The diagram on the left is the driver diagram. It shows the average number of dogs per households by US state. Among them, the color of each square represents the total number of dogs in the state. The graph on the right is the driven graph, which represents the total number of cat for each state. And the bar chart was ordered by the total number. So when reader select a region in the left, the state which has most cat will be shown in the right. Different color indicates different states, so the readers can compare them vividly. 
 
 <vegachart schema-url="{{ site.baseurl }}/assets/json/final.json" style="width: 60%"></vegachart>
 
